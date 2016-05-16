@@ -52,7 +52,7 @@ window.addEventListener("keydown", function(event) {
 function initMap() {
 var mapDiv = document.getElementById("map");
 var map = new google.maps.Map(mapDiv, {
-	center: {lat: 59.939121, lng: 30.319952},
+	center: {lat: 59.939121, lng: 30.320038},
 	zoom: 17
 	});
 

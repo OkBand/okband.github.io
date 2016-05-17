@@ -36,8 +36,9 @@ img {
 }
 
 .btn {
-	display: block;
-	padding: 10px 0;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 10px 10px;
 	margin-top: 25px;
 	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 12px;
@@ -47,8 +48,8 @@ img {
 	text-align: center;
 	text-decoration: none;
 	background-color: #fb565a;
-	outline: 0px;
-	border: 0px;
+	outline: 0;
+	border: 0;
 	border-radius: 3px;
 	cursor: pointer;
 }
@@ -304,7 +305,7 @@ img {
 }
 
 .slide .btn {
-	width: 240px;
+	min-width: 220px;
 	margin-top: 28px;
 	background-color: #fb565a;
 	color: #ffffff;
@@ -396,7 +397,8 @@ img {
 }
 
 .order .btn {
-	width: 140px;
+	min-width: 120px;
+	margin-top: 12px;
 }
 
 .order:nth-child(2) .btn {
@@ -697,7 +699,7 @@ img {
 
 .price-controls label {
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: middle;
 	width: 50%;
 	font-size: 16px;
 	text-transform: uppercase;
@@ -745,6 +747,8 @@ img {
 
 .layout-fieldset label {
 	position: relative;
+	display: inline-block;
+	vertical-align: top;
 	padding-left: 35px;
 	cursor: pointer;
 }
@@ -795,6 +799,8 @@ img {
 
 .features-fieldset label {
 	position: relative;
+	display: inline-block;
+	vertical-align: top;
 	padding-left: 35px;
 	cursor: pointer;
 }
@@ -832,9 +838,9 @@ img {
 }
 
 .catalog-btn {
-	width: 155px;
+	display: block;
+	min-width: 155px;
 	margin: 2px 0;
-	padding: 10px 45px;
 	color: #000000;
 	background-color: #f1f1f1;
 }
@@ -992,7 +998,8 @@ img {
 	border-radius: 4px 4px 0 0;
 }
 
-.template .browser span {
+
+.browser span {
 	position: absolute;
 	top: 10px;
 	left: 13px;
@@ -1002,11 +1009,11 @@ img {
 	border-radius: 50%;
 }
 
-.template .browser span:nth-child(2) {
+.browser span:nth-child(2) {
 	left: 30px;
 }
 
-.template .browser span:nth-child(3) {
+.browser span:nth-child(3) {
 	left: 47px;
 }
 
@@ -1101,11 +1108,13 @@ img {
 }
 
 .page a {
+	display: block;
 	width: 38px;
 	height: 38px;
 	box-sizing: border-box;
 	margin-top: 0;
 	margin-bottom: 0;
+	padding-top: 9px;
 	color: #000000;
 	font-size: 12px;
 	line-height: 18px;
@@ -1117,14 +1126,17 @@ img {
 
 .page-next a{
 	width: 140px;
+	padding-top: 9px;
 }
 
 .page a:hover {
+	padding-top: 9px;
 	background-color: #e5e5e5;
 	border: 0;
 }
 
 .page a:active {
+	padding-top: 9px;
 	background-color: #d5d5d5;
 	border: 0;
 	box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.15);
@@ -1132,15 +1144,15 @@ img {
 
 .page .active {
 	box-sizing: border-box;
-	padding: 8px 0;
+	padding-top: 7px;
 	background-color: #ffffff;
 	border: 2px solid #f2f2f2;
 }
 
 .page .active:hover {
+	padding-top: 9px;
 	background-color: #e5e5e5;
 	border: 0;
-	padding: 10px 0;
 }
 
 .main-footer {
@@ -1227,6 +1239,7 @@ img {
 }
 
 .address-block .btn {
+	display: block;
 	margin-left: 3px;
 	margin-right: 3px;
 }
